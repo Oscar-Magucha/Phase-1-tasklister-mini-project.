@@ -3,18 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Lister</title>
+    <title>Flatadango - Movie Theater</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="task-container">
-        <h1>Task Lister</h1>
-        <input type="text" id="task-input" placeholder="Add a new task...">
-        <button id="add-task-btn">Add Task</button>
 
-        <ul id="task-list"></ul>
+    <div class="container">
+        <header>
+            <h1>Flatadango - Movie Theater</h1>
+        </header>
+
+        <!-- Menu with all films -->
+        <section>
+            <h2>Movies</h2>
+            <ul id="films"></ul>
+        </section>
+
+        <!-- Film details section -->
+        <section id="film-details">
+            <h2>Movie Details</h2>
+            <div id="film-info"></div>
+            <button id="buy-ticket" disabled>Buy Ticket</button>
+        </section>
     </div>
 
-    <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
+
